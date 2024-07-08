@@ -1,8 +1,8 @@
+import BodyWrapper from "@/_libs/components/layouts/BodyWrapper/BodyWrapper";
+import HeaderBasic from "@/_libs/components/organisms/headers/HeaderBasic/HeaderBasic";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import "../_libs/scss/styles.scss";
+import { HeaderContexts } from "./_common/contexts/headerContexts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +15,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="ja">
+      <BodyWrapper>
+        <HeaderBasic
+          logoImageItem={
+            HeaderContexts.logoImageItem
+          }
+        />
+        <main>
+          {children}
+        </main>
+      </BodyWrapper>
     </html>
   );
 }

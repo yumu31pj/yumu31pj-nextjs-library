@@ -1,0 +1,16 @@
+@use 'sass:math';
+@use './variables' as var;
+// media queries
+@mixin media($breakpoint) {
+  @media #{map-get(var.$breakpoints, $breakpoint)} {
+      @content;
+  }
+}
+
+// $fs_min, $width_small, $fs_max and $width_large should be set with 'px'
+@mixin auto_clamp($fs_min, $width_small, $fs_max, $width_large) {
+  $preferred_vw_base: math.div(($fs_max - $fs_min), ($width_large - $width_small));
+  $preferred_vw: ($preferred_vw_base * 100) * 1vw;
+  $preferred_rem: ($width_small * -1 * $preferred_vw_base + $fs_min) * .1rem;
+  font-size: clamp($fs_min * .1rem, $preferred_rem + $preferred_vw, $fs_max * .1rem);
+}

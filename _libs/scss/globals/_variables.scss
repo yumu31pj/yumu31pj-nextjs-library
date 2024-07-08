@@ -1,0 +1,40 @@
+@charset 'urt-8';
+// font-size
+$default_fz: 16;
+
+$theme-colors: (
+  primary: #333,
+  secondary: #b70000,
+  success: #2359A1,
+  warning: #f8c11a,
+  danger: #b70000,
+  background: #e9e9e9,
+  base: #f7f7f7,
+);
+
+// ================
+// body min-width
+// ================
+$minWidth: 375px;
+
+// ================
+// view Size
+// ================
+$xs: '375px'; // for small screen mobile
+$sm: '600px'; // for mobile screen
+$md: '960px'; // for tablets
+$lg: '1280px'; // for laptops
+$xl: '1440px'; // for desktop / monitors
+$xxl: '1920px'; // for big screens
+
+// ================
+// Break Points
+// ================
+$breakpoints: (
+  'xs': 'screen and (min-width: #{$xs})',  // SmartPhone
+  'sm': 'screen and (min-width: #{$sm})',  // Tablet
+  'md': 'screen and (min-width: #{$md})',  // PC
+  'lg': 'screen and (min-width: #{$lg})', // PC (Wide)
+  'xl': 'screen and (min-width: #{$xl})', // PC (Wide)
+  'xxl': 'screen and (min-width: #{$xxl})' // PC (Wide)
+) !default;
