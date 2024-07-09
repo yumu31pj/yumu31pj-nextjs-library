@@ -8,6 +8,6 @@ export type ResponsiveImageType = {
   widthPC?: number;
   heightPC?: number;
   altText: string;
-  breakpointsTB?: number;
-  breakpointsPC?: number;
+  breakpointTB?: number;
+  breakpointPC?: number;
 }

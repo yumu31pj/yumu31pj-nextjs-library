@@ -19,8 +19,8 @@ const HeaderBasic = (props: HeaderBasicType) => {
             widthPC={logoImageItem.widthPC}
             heightPC={logoImageItem.heightPC}
             altText={logoImageItem.altText}
-            breakpointsPC={logoImageItem.breakpointsPC}
-            breakpointsTB={logoImageItem.breakpointsTB}
+            breakpointPC={logoImageItem.breakpointPC}
+            breakpointTB={logoImageItem.breakpointTB}
           />
         </h1>
       </HeaderInnerBasic>
