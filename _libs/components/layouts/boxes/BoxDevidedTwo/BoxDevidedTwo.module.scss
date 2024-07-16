@@ -1,0 +1,27 @@
+@use "@globals" as g;
+
+.l-box-devided-two {
+  display: flex;
+    flex-direction: column;
+  width: 100%;
+
+  @include g.media('pc') {
+    flex-direction: row;
+  }
+
+  &--reverse {
+    flex-direction: column-reverse;
+    @include g.media('pc') {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__first {
+    width: 50%;
+  } 
+
+  &__second {
+    width: 50%;
+  }
+
+}

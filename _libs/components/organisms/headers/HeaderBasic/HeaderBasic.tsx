@@ -14,13 +14,10 @@ const HeaderBasic = (props: HeaderBasicType) => {
             srcPC={logoImageItem.srcPC}
             srcWebpSP={logoImageItem.srcWebpSP}
             srcWebpPC={logoImageItem.srcWebpPC}
-            widthSP={logoImageItem.widthSP}
-            heightSP={logoImageItem.heightSP}
-            widthPC={logoImageItem.widthPC}
-            heightPC={logoImageItem.heightPC}
+            width={logoImageItem.width}
+            height={logoImageItem.height}
             altText={logoImageItem.altText}
-            breakpointPC={logoImageItem.breakpointPC}
-            breakpointTB={logoImageItem.breakpointTB}
+            breakpoint={logoImageItem.breakpoint}
           />
         </h1>
       </HeaderInnerBasic>

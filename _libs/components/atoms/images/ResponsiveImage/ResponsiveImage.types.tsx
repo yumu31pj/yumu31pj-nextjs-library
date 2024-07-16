@@ -3,11 +3,8 @@ export type ResponsiveImageType = {
   srcPC?: string;
   srcWebpPC?: string;
   srcWebpSP?: string;
-  widthSP?: number;
-  heightSP?: number;
-  widthPC?: number;
-  heightPC?: number;
+  width?: number;
+  height?: number;
   altText: string;
-  breakpointTB?: number;
-  breakpointPC?: number;
+  breakpoint?: number;
 }
