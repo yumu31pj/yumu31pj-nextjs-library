@@ -7,7 +7,7 @@
   @return clamp($fs_min * .1rem, $preferred_rem + $preferred_vw, $fs_max * .1rem);
 }
 
-// 使用例
+// Example
 // body {
 //   font-size: auto_clamp(20, 375, 30, 1024);
 // }

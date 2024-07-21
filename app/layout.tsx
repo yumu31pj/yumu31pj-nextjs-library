@@ -1,8 +1,8 @@
-import BodyWrapper from "@/_libs/components/layouts/BodyWrapper/BodyWrapper";
-import HeaderBasic from "@/_libs/components/organisms/headers/HeaderBasic/HeaderBasic";
+import HeaderBasic from "@/app/_libs/components/organisms/headers/HeaderBasic/HeaderBasic";
 import type { Metadata } from "next";
-import "../_libs/scss/styles.scss";
-import { HeaderContexts } from "./_common/contexts/headerContexts";
+import BodyWrapper from "./_libs/components/layouts/bodies/BodyWrapper/BodyWrapper";
+import { HeaderContexts } from "./_libs/contexts/HeaderContexts";
+import "./_libs/scss/styles.scss";
 
 export const metadata: Metadata = {
   title: "Create Next App",

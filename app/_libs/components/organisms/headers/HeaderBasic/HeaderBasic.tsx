@@ -1,6 +1,6 @@
-import ResponsiveImage from "@/_libs/components/atoms/images/ResponsiveImage/ResponsiveImage";
-import HeaderBasicWrapper from "@/_libs/components/layouts/headers/HeaderBasicWrapper/HeaderBasicWrapper";
-import HeaderInnerBasic from "@/_libs/components/layouts/headers/HeaderInnerBasic/HeaderInnerBasicBasic";
+import ResponsiveImage from "@/app/_libs/components/atoms/images/ResponsiveImage/ResponsiveImage";
+import HeaderBasicWrapper from "@/app/_libs/components/layouts/headers/HeaderBasicWrapper/HeaderBasicWrapper";
+import HeaderInnerBasic from "@/app/_libs/components/layouts/headers/HeaderInnerBasic/HeaderInnerBasicBasic";
 import { HeaderBasicType } from "./HeaderBasic.types";
 
 const HeaderBasic = (props: HeaderBasicType) => {

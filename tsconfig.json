@@ -20,7 +20,7 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["./*"],
-      "@globals": ["_libs/scss/globals/"]
+      "@globals": ["app/_libs/scss/globals"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
